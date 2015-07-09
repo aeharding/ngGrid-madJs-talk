@@ -1,5 +1,8 @@
-# [Not all Angular Data Grids are Created Equal](http://www.meetup.com/MadisonJS/events/220340781/)
-**By Alexander Harding**
+# Not all Angular Data Grids are Created Equal
+
+  * **By Alexander Harding**
+  * [Meetup link](http://www.meetup.com/MadisonJS/events/220340781/)
+  * [Presentation link](http://aeharding.github.io/ngGrid-madJs-talk)
 
 #### Where?
 Madison Central Public Library
