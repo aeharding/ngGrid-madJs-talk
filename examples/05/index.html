@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html ng-app="app">
+
+  <head>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    
+    <link rel="stylesheet" href="drop-theme-arrows.css" />
+    <script src="tether.js"></script>
+    <script src="drop.js"></script>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular.js"></script>
+    <script src="multi-transclude.js"></script>
+    
+    <script src="my-wicked-button.js"></script>
+    
+    <style>
+      .my-wicked-button {
+        border: 4px solid red;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>ngMad - <a href="https://github.com/zachsnow/ng-multi-transclude">multi-transclude</a></h1>
+    <p><small><a href="http://aeharding.github.io/ngGrid-madJs-talk">[back to presentation]</a></small></p>
+    <hr><br><br>
+    
+    <!--///////////////////////
+    // IMPORTANT STUFF BELOW //
+    ////////////////////////-->
+    <my-wicked-button>
+      
+      <!-- TOOLTIP/HINT STUFF -->
+      <div name="hint">
+        <i class="fa fa-flag"></i> A hint when you hover
+      </div>
+      
+      <!-- MAIN CONTENT AREA -->
+      <div name="main">
+        <i class="fa fa-flag"></i> BOOM
+      </div>
+      
+    </my-wicked-button>
+  </body>
+
+</html>

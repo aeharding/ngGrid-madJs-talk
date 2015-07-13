@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html ng-app="app">
+
+  <head>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular.js"></script>
+    <script>
+      angular.module('app', []);
+    </script>
+    
+    <script src="my-alerts.js"></script>
+    <script src="dismiss-alert.js"></script>
+    <script src="my-alerts-controller.js"></script>
+    
+    <style>
+      .my-wicked-button {
+        border: 4px solid red;
+      }
+      
+      .alert {
+        padding: 20px;
+      }
+      
+      /* http://www.color-hex.com/color/c16666 */
+      .alert-type-danger {
+        background-color: #C16666;
+        color: white;
+      }
+      .alert-type-primary {
+        background-color: #66C1C1;
+      }
+      
+      dismiss-alert {
+        float: right;
+        width: 20px;
+        height: 20px;
+        padding: 3px 0 0 8px;
+        cursor: pointer;
+      }
+      dismiss-alert:hover {
+        background-color: rgba(255, 255, 255, 0.5);
+      }
+      dismiss-alert:active {
+        background-color: rgba(255, 255, 255, 0.4);
+      }
+    </style>
+
+  </head>
+
+  <body ng-controller="MyalertsController">
+    <h1>ngMad - alerts (declaration)</h1>
+    <p><small><a href="http://aeharding.github.io/ngGrid-madJs-talk">[back to presentation]</a></small></p>
+    <hr><br><br>
+    
+    <h2>My alerts</h2>
+    <!--///////////////////////
+    // IMPORTANT STUFF BELOW //
+    ////////////////////////-->
+    <div ng-repeat="alert in alertsArr"
+         class="alert alert-type-{{alert.type}}"
+         my-alert>
+      {{alert.message}} <dismiss-alert on-resolve="alert.onResolve()"><i class="fa fa-times"></i></dismiss-alert>
+    </div>
+    
+  </body>
+
+</html>

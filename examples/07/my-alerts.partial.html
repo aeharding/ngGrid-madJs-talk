@@ -1,0 +1,5 @@
+<div ng-repeat="alert in alertsArr"
+     class="alert alert-type-{{alert.type}}"
+     my-alert>
+  {{alert.message}} <dismiss-alert on-resolve="alert.onResolve()"><i class="fa fa-times"></i></dismiss-alert>
+</div>
